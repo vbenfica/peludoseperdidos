@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastroPetPerdido</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <h2>Informe os dados do seu Pet</h2>
+    <form method='POST' action='recebe-dados.php'>
+        <label for="espécie">Espécie</label>
+        <select id="espécie" name="espécie">
+            <option value="CÃO">CÃO</option>
+            <option value="GATO">GATO</option>          
+        </select>
+       
+        <label for="gênero">Gênero</label>
+        <select id="gênero" name="gênero">
+            <option value="macho">MACHO</option>
+            <option value="fêmea">FÊMEA</option>          
+        </select>
+       
+        <label for="porte">Porte</label>
+        <select id="porte" name="porte">
+            <option value="pequeno">PEQUENO</option>
+            <option value="médio">MÉDIO</option>  
+            <option value="grande">GRANDE</option>        
+        </select><br><br>
+       
+        <label for="nome">Nome</label>
+        <input type='text' id='nome' name='nome' required><br>
+        
+        <label for="peso">Peso</label>
+        <input type='peso' id='peso' name='peso' required>
+        
+        <label for="pêlo">Cor do Pêlo</label>
+        <input type="pêlo" id="pêlo" name="pêlo" required><br><br>
+        
+        <label for="raça">Raça</label>
+        <input type="raça" id="raça" name="raça" required>
+       
+        <label for="situação">Situação</label>
+        <input type="situação" id="situação" name="situação" required><br><br>
+        
+        <label for="msg">Mensagem</label><br>
+        <textarea id="msg" name="msg" rows="4" cols="50"></textarea>
+        <br>
+        <input type="Cancelar" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+</body>
+</html>
